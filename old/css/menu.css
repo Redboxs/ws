@@ -1,0 +1,47 @@
+/* Examples for media queries */
+
+@media screen and (max-width: 52.75em) { 
+
+	.bbf-hrmenu {font-size: 80%}
+
+}
+
+@media screen and (max-width: 720px) { 
+
+	.bbf-hrmenu {font-size: 120%; border: none}
+
+	.bbf-hrmenu > ul,
+	.bbf-hrmenu .bbf-hrsub-inner {width: 100%; padding: 0}
+
+	.bbf-hrmenu .bbf-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	.bbf-hrmenu > ul > li {
+		display: block;
+		border-bottom: 4px solid #eca;
+	}
+
+	.bbf-hrmenu > ul > li > a { 
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.bbf-hrmenu .bbf-hrsub { 
+		position: relative;
+	}
+
+	.bbf-hrsub h4 {
+		padding-top: 0.6em;
+	}
+
+}
+
+@media screen and (max-width: 720px) { 
+	.bbf-hrmenu .bbf-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}
+}

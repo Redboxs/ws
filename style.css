@@ -1,0 +1,63 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+
+/* RESET & CLEARFIX */
+*, *:after, *:before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box}
+.clearfix:before, .clearfix:after {content: " "; display: table}
+.clearfix:after {clear: both}
+
+body, html {font-size: 100%; padding: 0; margin: 0; background-color: #EFE2CD}
+body {font-family:"Lato"; margin: 0}
+p {font-family:"Source Sans Pro"}
+ul, li, ol {list-style: none; text-decoration: none}
+
+a {color: #0E4770; font-weight: 700; text-decoration: none}
+a:hover {color: #F5913C; transition-duration: 400ms}
+
+/* COLOR PICK */
+.color1{color:#EFE2CD} /* BACKGROUND */
+.color2{color:#F05675} /* HYPERLINK ALT COLOR */
+.color3{color:#0E4770} /* MAIN COLOR */
+.color4{color:#F5913C} /* HYPERLINK COLOR */
+.color5{color:#E11E00} /* ACTIVE COLOR */
+
+/* HERO */
+
+/* HEADER */
+header{display: block;	width: 100%; overflow-x: hidden; position: fixed; z-index: 100;}
+header{background-color: #EFE2CD; border-bottom: 3px solid #0E4770}
+
+.head{display: flex}
+
+nav ul{display: flex; flex-direction: row; flex-wrap: wrap}
+nav ul li{font-size: 20px; line-height: 42px; letter-spacing: -0.5px; height: 24px; padding: 0 24px 0 0}
+
+/* STRUCTURE */
+#main-container{max-width: 1200px; margin: auto}
+#home-past{margin-top: 200px}
+
+/* GENERAL MENU */
+#brand-logo{width:300px;text-align: right;letter-spacing: -4px; word-spacing: 4px}
+#brand-logo{color:#0E4770;font-size: 42px;font-family:"Source Sans Pro";font-weight: 700}
+
+/* FOOTER */
+#footer {width: 100%; background-color: #0E4770; padding: 30px}
+#footer p {font-size: 14px; font-weight: 500; color: #E7DFDD; text-align: center; text-transform: uppercase}
+#footer a {color: #F05675}
+
+/* SOCIAL */
+.band-flex-container{display: flex;flex-wrap: wrap; justify-content: space-between;}
+.band-edito{width: 100%}
+.band-card{padding: 20px; margin:10px 0; border-radius: 3px; background-color:white}
+.band-logo{width: 300px}
+.band-image{height: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.band-social{background-color: red}
+
+/* @MEDIA = SIZE_DESKTOP */
+.band-card{width: calc(50% - 10px)}
+.band-card:nth-child(2) {order: 1}
+.band-card:nth-child(3) {order: 3}
+.band-card:nth-child(4) {order: 5}
+.band-card:nth-child(5) {order: 2}
+.band-card:nth-child(6) {order: 4}
+.band-card:nth-child(7) {order: 6}
